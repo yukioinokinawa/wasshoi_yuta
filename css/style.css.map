@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sources":["../scss/foundation/_base.scss","style.css","../scss/layout/_header.scss"],"names":[],"mappings":"AAEA;EACI,gBAAA;EACA,WAAA;EACA,UAAA;EACA,SAAA;ACDJ;;ADGA;EACI,WAAA;EACA,YAAA;ACAJ;;ADEA;EACI,sBAAA;ACCJ;;ADCA;EACI,gBAAA;ACEJ;;ADAA;EACI,qBAAA;ACGJ;;ACpBA;EACI,WAAA;EACA,aAAA;EACA,mBAAA;ADuBJ;ACrBI;EACI,qBAAA;ADuBR;ACrBQ;EACI,YAAA;EACA,cAAA;ADuBZ","file":"style.css"}
+=======
+{"version":3,"sources":["../scss/foundation/_base.scss","style.css","../scss/layout/_header.scss","../scss/layout/_footer.scss"],"names":[],"mappings":"AAEA;EACI,gBAAA;EACA,WAAA;EACA,UAAA;EACA,SAAA;ACDJ;;ADGA;EACI,WAAA;EACA,YAAA;ACAJ;;ADEA;EACI,sBAAA;ACCJ;;ADCA;EACI,gBAAA;ACEJ;;ADAA;EACI,qBAAA;ACGJ;;ACtBA;EACI,YAAA;EACA,aAAA;ADyBJ;;AEzBA;EACI,WAAA;EACA,aAAA;AF4BJ","file":"style.css"}
+>>>>>>> b4f80a7fd22b09a2e72e64a8e5f2d630a2ea9b29
