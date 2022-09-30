@@ -1,12 +1,14 @@
 @use "../../Foundation/variable" as *;
 
-.c-panel{
+.c-panel {
 
-    &--main{        //立体的なパネル
+    &--main {
+        //立体的なパネル
 
     }
 
-    &--sub{         //プライバシーポリシーのパネル
+    &--sub {
+        //プライバシーポリシーのパネル
 
     }
 }

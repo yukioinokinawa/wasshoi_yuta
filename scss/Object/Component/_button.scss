@@ -1,24 +1,29 @@
 @use "../../Foundation/variable" as *;
 
-.c-button{
+.c-button {
 
-    &--hamburger{   //ハンバーガーボタン
-
-    }
-
-    &--profile{     //プロフィールダウンロードボタン
+    &--hamburger {
+        //ハンバーガーボタン
 
     }
 
-    &--go-single{   //シングルページに行くボタン
+    &--profile {
+        //プロフィールダウンロードボタン
 
     }
 
-    &--submit{      //フォームの送信ボタン
+    &--go-single {
+        //シングルページに行くボタン
 
     }
 
-    &--sample{      //投稿ページ用のサンプル
+    &--submit {
+        //フォームの送信ボタン
+
+    }
+
+    &--sample {
+        //投稿ページ用のサンプル
 
     }
 }

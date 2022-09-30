@@ -22,33 +22,34 @@ a {
   text-decoration: none;
 }
 
+p, h3, h4, h5, h6 {
+  color: #222222;
+}
+
+p {
+  font-size: 16px;
+}
+
 .l-header {
   width: 100%;
   height: 150px;
   align-items: center;
 }
-
 .l-header a {
   display: inline-block;
 }
-
 .l-header a img {
   width: 120px;
   margin: 10px 0;
 }
 
-p,
-h3,
-h4,
-h5,
-h6 {
-  color: #222222;
-}
-
-
 .l-footer {
   width: 100%;
   height: 128px;
+  padding-bottom: 30px;
 }
 
+l-main {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

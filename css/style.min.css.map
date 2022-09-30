@@ -1,10 +1,1 @@
-{
-    "version": 3,
-    "sources": [
-        "../scss/foundation/_base.scss",
-        "../scss/layout/_header.scss"
-    ],
-    "names": [],
-    "mappings": "AAEA,KACI,eAAA,CACA,UAAA,CACA,SAAA,CACA,QAAA,CAEJ,KACI,UAAA,CACA,WAAA,CAEJ,IACI,qBAAA,CAEJ,GACI,eAAA,CAEJ,EACI,oBAAA,CCjBJ,UACI,UAAA,CACA,YAAA,CACA,kBAAA,CAEA,YACI,oBAAA,CAEA,gBACI,WAAA,CACA,aAAA",
-    "file": "style.min.css"
-}
+{"version":3,"sources":["../scss/foundation/_base.scss","../scss/layout/_header.scss","../scss/layout/_footer.scss","../scss/layout/_main.scss"],"names":[],"mappings":"AAEA,KACI,eAAA,CACA,UAAA,CACA,SAAA,CACA,QAAA,CAEJ,KACI,UAAA,CACA,WAAA,CAEJ,IACI,qBAAA,CAEJ,GACI,eAAA,CAEJ,EACI,oBAAA,CAEJ,cACI,UAAA,CAEJ,EACI,cAAA,CCvBJ,UACI,UAAA,CACA,YAAA,CACA,kBAAA,CAEA,YACI,oBAAA,CAEA,gBACI,WAAA,CACA,aAAA,CCVZ,UACI,UAAA,CACA,YAAA,CACA,mBAAA,CCHJ,OACI,UAAA","file":"style.min.css"}
