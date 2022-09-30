@@ -1,17 +1,16 @@
-
 // Foundation
 // ---------------------------------
- 
-@use  "foundation/_reset";
-@use  "foundation/_base";
-@use  "foundation/_variable";
+
+@use "foundation/_reset";
+@use "foundation/_base";
+@use "foundation/_variable";
 
 //----------------------------------
 // Layouts
 // ---------------------------------
 
- 
- 
+@use "layout/_header";
+
 // ---------------------------------
 // Object
 // ---------------------------------
@@ -21,13 +20,11 @@
 // Component
 // ----------
 
- 
+
 // ----------
 // Project
 // ----------
- 
+
 // ----------
 // Utility
 // ----------
-
-
