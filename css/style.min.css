@@ -1,6 +1,40 @@
-<<<<<<< HEAD
-html{font-size:62.5%;width:100%;padding:0;margin:0}body{width:100%;height:100%}img{vertical-align:bottom}ul{list-style:none}a{text-decoration:none}.l-header{width:100%;height:150px;align-items:center}.l-header a{display:inline-block}.l-header a img{width:120px;margin:10px 0}
-=======
-html{font-size:62.5%;width:100%;padding:0;margin:0}body{width:100%;height:100%}img{vertical-align:bottom}ul{list-style:none}a{text-decoration:none}header{width:375px;height:812px}.l-footer{width:100%;height:128px}
->>>>>>> b4f80a7fd22b09a2e72e64a8e5f2d630a2ea9b29
+html {
+    font-size: 62.5%;
+    width: 100%;
+    padding: 0;
+    margin: 0
+}
+
+body {
+    width: 100%;
+    height: 100%
+}
+
+img {
+    vertical-align: bottom
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+.l-header {
+    width: 100%;
+    height: 150px;
+    align-items: center
+}
+
+.l-header a {
+    display: inline-block
+}
+
+.l-header a img {
+    width: 120px;
+    margin: 10px 0
+}
+
 /*# sourceMappingURL=style.min.css.map */
