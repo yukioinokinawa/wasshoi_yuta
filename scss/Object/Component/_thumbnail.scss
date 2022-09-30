@@ -1,0 +1,12 @@
+@use "../../Foundation/variable" as *;
+
+.c-thumbnail{
+
+    &--maru{        //サムネを丸型にするとき
+
+    }
+
+    &--shikaku{     //サムネを四角形にするとき
+
+    }
+}
