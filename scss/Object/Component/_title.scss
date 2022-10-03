@@ -9,12 +9,14 @@
 
     &--page {
         //下層ページのタイトル
+        font-size: 32px;
 
     }
 
     &--section {
         //セクションごとの見出し
-
+        font-size: 32px;
+        color: $navy;
     }
 
     &--profile {
