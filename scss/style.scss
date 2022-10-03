@@ -1,33 +1,38 @@
-
 // Foundation
 // ---------------------------------
- 
-@use  "foundation/_reset";
-@use  "foundation/_base";
-@use  "foundation/_variable";
+
+@use "foundation/_reset";
+@use "foundation/_base";
+@use "foundation/_variable";
 
 //----------------------------------
 // Layouts
 // ---------------------------------
 
- 
- 
+@use "layout/_header";
+@use "layout/footer";
+@use "layout/main";
+@use "layout/sidebar";
 // ---------------------------------
 // Object
 // ---------------------------------
 
-
 // ----------
 // Component
 // ----------
-
- 
+@use "object/Component/button";
+@use "object/Component/panel";
+@use "object/Component/thumbnail";
+@use "object/Component/title";
+@use "object/Component/shadow";
 // ----------
 // Project
 // ----------
- 
+@use "object/Project/card";
+@use "object/Project/form";
+@use "object/Project/nav";
+@use "object/Project/section";
+@use "object/Project/sns";
 // ----------
 // Utility
 // ----------
-
-
