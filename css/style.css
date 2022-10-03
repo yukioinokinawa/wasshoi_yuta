@@ -34,6 +34,7 @@ p {
   width: 100%;
   height: 150px;
   align-items: center;
+  background-color: rgba(1, 1, 1, 0.0039215686);
 }
 .l-header a {
   display: inline-block;
