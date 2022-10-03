@@ -1,3 +1,22 @@
 @use "../Foundation/variable" as *;
 
-.l-sidebar {}
+.l-sidebar {
+    font-family: "Fredericka the Great";
+    font-size: 21px;
+    color: #1E1E1E;
+
+    nav {
+        ul {
+            padding-top: 80px;
+            padding-left: 30px;
+
+            li {
+                padding-bottom: 40px;
+
+                a {
+                    color: #1E1E1E;
+                }
+            }
+        }
+    }
+}

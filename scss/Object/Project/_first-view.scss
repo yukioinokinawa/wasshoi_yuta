@@ -1,0 +1,10 @@
+@use "../../Foundation/variable" as *;
+
+.p-first-view {
+    width: 100%;
+
+    >img {
+        width: 100%;
+    }
+
+}

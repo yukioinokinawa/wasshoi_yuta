@@ -1,6 +1,9 @@
 @use "../../Foundation/variable" as *;
 
 .p-sns {
-    //SNSリンクアイコンの塊  レスポンシブでフッターへ移動
 
+    //SNSリンクアイコンの塊  レスポンシブでフッターへ移動
+    img {
+        width: 32px;
+    }
 }
