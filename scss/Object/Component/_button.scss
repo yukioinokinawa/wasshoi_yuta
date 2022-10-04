@@ -14,15 +14,35 @@
         color: $white;
         font-size: 15px;
         border-radius: 100px;
-        min-width: 340px;
+        min-width: 320px;
         display: block;
         width: 320px;
         margin: auto;
+        box-shadow: 7px 5px 0px $yellow;
     }
+
+
+    
 
     &--go-single {
         //シングルページに行くボタン
-
+        padding: 18px 115px;
+        background: $navy;
+        color: $white;
+        font-size: 15px;
+        border-radius: 100px;
+        min-width: 320px;
+        display: block;
+        width: 320px;
+        margin: auto;
+        box-shadow: 7px 5px 0px $yellow;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "▶";
+            top: 20px;
+            right: 25px;
+        }
     }
 
     &--submit {

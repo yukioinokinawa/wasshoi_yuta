@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
   width: 100%;
@@ -59,10 +60,30 @@ p {
   color: #fff;
   font-size: 15px;
   border-radius: 100px;
-  min-width: 340px;
+  min-width: 320px;
   display: block;
   width: 320px;
   margin: auto;
+  box-shadow: 7px 5px 0px #E8EB5E;
+}
+.c-button--go-single {
+  padding: 18px 115px;
+  background: #000052;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 100px;
+  min-width: 320px;
+  display: block;
+  width: 320px;
+  margin: auto;
+  box-shadow: 7px 5px 0px #E8EB5E;
+  position: relative;
+}
+.c-button--go-single::after {
+  position: absolute;
+  content: "▶";
+  top: 20px;
+  right: 25px;
 }
 .c-thumbnail {
   width: 300px;
