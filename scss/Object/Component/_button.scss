@@ -18,7 +18,6 @@
         display: block;
         width: 320px;
         margin: auto;
-        box-shadow: 7px 5px 0px $yellow;
     }
 
 
@@ -26,16 +25,15 @@
 
     &--go-single {
         //シングルページに行くボタン
-        padding: 18px 115px;
-        background: $navy;
-        color: $white;
+        padding: 18px 103px;
+        background: #000052;
+        color: #fff;
         font-size: 15px;
         border-radius: 100px;
-        min-width: 320px;
+        min-width: 290px;
         display: block;
-        width: 320px;
+        width: 100%;
         margin: auto;
-        box-shadow: 7px 5px 0px $yellow;
         position: relative;
         &::after{
             position: absolute;

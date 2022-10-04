@@ -27,6 +27,7 @@
 @use "object/Component/shadow";
 @use "object/Component/list";
 @use "object/Component/flex-box";
+@use "object/Component/grid";
 // ----------
 // Project
 // ----------
@@ -37,6 +38,7 @@
 @use "object/Project/sns";
 @use "object/Project/profile";
 @use "object/Project/career";
+@use "object/Project/history-works";
 // ----------
 // Utility
 // ----------
