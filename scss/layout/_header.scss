@@ -17,6 +17,16 @@
     button {
         position: absolute;
         right: 0;
-        top: 10%;
+        top: 5%;
+    }
+
+    @include breakpoint(pc) {
+        a {
+            justify-content: space-around;
+        }
+
+        button {
+            display: none;
+        }
     }
 }

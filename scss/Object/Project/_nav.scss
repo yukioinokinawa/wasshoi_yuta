@@ -1,6 +1,22 @@
 @use "../../Foundation/variable" as *;
 
 .p-nav {
-    //ナビゲーションメニューの塊  レスポンシブでヘッダーに行く
+    width: 184px;
+    height: auto;
+    background-color: #fff;
+    overflow-y: auto;
 
+    //ナビゲーションメニューの塊  レスポンシブでヘッダーに行く
+    ul {
+        padding-top: 80px;
+        padding-left: 30px;
+
+        li {
+            padding-bottom: 40px;
+
+            a {
+                color: #1E1E1E;
+            }
+        }
+    }
 }
