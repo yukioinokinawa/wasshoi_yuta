@@ -22,7 +22,8 @@
 
     @include breakpoint(pc) {
         a {
-            justify-content: space-around;
+            justify-content: flex-start;
+            padding-left: 86px;
         }
 
         button {

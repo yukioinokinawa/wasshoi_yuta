@@ -7,7 +7,7 @@
     overflow-y: auto;
 
     //ナビゲーションメニューの塊  レスポンシブでヘッダーに行く
-    ul {
+    &__ul {
         padding-top: 80px;
         padding-left: 30px;
 
@@ -16,6 +16,31 @@
 
             a {
                 color: #1E1E1E;
+                width: 120px;
+                display: block;
+                overflow-wrap: break-word;
+            }
+        }
+    }
+
+    @include breakpoint(pc) {
+        &__ul {
+            display: flex;
+            justify-content: flex-start;
+            position: absolute;
+            right: 100%;
+
+            li {
+                margin-right: 64px;
+
+                &:first-child {
+                    display: none;
+                }
+
+                a {
+                    width: auto;
+                    white-space: nowrap;
+                }
             }
         }
     }
