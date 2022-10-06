@@ -1,6 +1,47 @@
 @use "../../Foundation/variable" as *;
 
 .p-nav {
-    //ナビゲーションメニューの塊  レスポンシブでヘッダーに行く
+    width: 184px;
+    height: auto;
+    background-color: #fff;
+    overflow-y: auto;
 
+    //ナビゲーションメニューの塊  レスポンシブでヘッダーに行く
+    &__ul {
+        padding-top: 80px;
+        padding-left: 30px;
+
+        li {
+            padding-bottom: 40px;
+
+            a {
+                color: #1E1E1E;
+                width: 120px;
+                display: block;
+                overflow-wrap: break-word;
+            }
+        }
+    }
+
+    @include breakpoint(pc) {
+        &__ul {
+            display: flex;
+            justify-content: flex-start;
+            position: absolute;
+            right: 100%;
+
+            li {
+                margin-right: 64px;
+
+                &:first-child {
+                    display: none;
+                }
+
+                a {
+                    width: auto;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
 }

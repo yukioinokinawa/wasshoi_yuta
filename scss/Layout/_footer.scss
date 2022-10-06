@@ -1,7 +1,23 @@
 @use "../Foundation/variable" as *;
 
-.l-footer{
+.l-footer {
     width: 100%;
-    height: 128px;
-    padding-bottom: 30px;
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 8px;
+    color: #1E1E1E;
+    position: relative;
+
+    @include breakpoint(pc) {
+        height: 128px;
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-start;
+
+        >p {
+            position: absolute;
+            top: 50%;
+            margin-left: 220px;
+        }
+    }
 }
