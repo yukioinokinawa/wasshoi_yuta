@@ -23,37 +23,46 @@
 <body>
     <header class="l-header">
         <a href="#"><img src="/imgs/header-logo.jpg" alt="わっしょいゆーたロゴ"></a>
-        <button>
+        <button class="c-button--hamburger js-hamburger">
             <span>menuボタン</span>
         </button>
     </header>
     <!--header-->
-    <l-main>
-        <img src="/imgs/top-page-img.jpg" alt="メイン写真">
-        <div>
-            <h1>わっしょいゆ〜た</h1>
-            <p>OFFICIAL WEB SITE</p>
+    <main class="l-main">
+        <div class="p-first-view">
+            <img src="/imgs/top-page-img.jpg" alt="メイン写真">
+            <div class="c-top-title">
+                <h1>わっしょいゆ〜た</h1>
+                <p>OFFICIAL WEB SITE</p>
+            </div>
         </div>
-        </main>
-        <!--main top-->
-        <footer>©️わっしょいゆ〜た / 2022</footer>
-        <!--footer-->
-        <aside>
-            <nav>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">HISTORY&WORKS</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#"><img src="/imgs/facebook-icon.png" alt="facebook"></a></li>
-                    <li><a href="#"><img src="/imgs/twitter-icon.png" alt="twitter"></a></li>
-                    <li><a href="#"><img src="/imgs/instagram-icon.png" alt="Instagram"></a></li>
-                </ul>
-            </nav>
-        </aside>
-        <!--sidebar-->
+    </main>
+    </main>
+    <!--main top-->
+    <footer class="l-footer">
+        <p>©️わっしょいゆ〜た / 2022</p>
+        <ul class="p-sns">
+            <li><a href="#"><img src="/imgs/facebook-icon.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="/imgs/twitter-icon.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="/imgs/instagram-icon.png" alt="Instagram"></a></li>
+        </ul>
+    </footer>
+
+    <!--footer-->
+    <aside class="l-sidebar">
+        <nav class="p-nav">
+            <ul class="p-nav__ul">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PROFILE</a></li>
+                <li><a href="#">HISTORY & WORKS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </aside>
+    </article>
+    <div class="c-layer--sidebar"></div>
+    <!--sidebar-->
+    <script src="/js/hamburger.js"></script>
 </body>
 
 </html>
