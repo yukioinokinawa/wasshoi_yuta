@@ -117,9 +117,6 @@ p {
   }
 }
 
-
-.l-main {
-=======
 .c-button--hamburger {
   width: 40px;
   height: 40px;
@@ -172,118 +169,6 @@ p {
 .c-button--hamburger.is-open > span {
   background: none;
 }
-.c-top-title {
-  width: 100vw;
-  display: inline-block;
-  text-align: center;
-  padding: 60px 0;
-}
-.c-top-title h1 {
-  font-family: "M PLUS 1";
-  font-size: 36px;
-  color: #000052;
-}
-.c-top-title p {
-  font-family: "Fredericka the Great";
-  font-size: 20px;
-  color: #1E1E1E;
-}
-@media (min-width: 1025px) {
-  .c-top-title {
-    display: none;
-  }
-}
-
-.c-layer--sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 5;
-  display: none;
-}
-.c-layer--sidebar.is-open {
-  display: inherit;
-}
-
-.p-nav {
-  width: 184px;
-  height: auto;
-  background-color: #fff;
-  overflow-y: auto;
-}
-.p-nav__ul {
-  padding-top: 80px;
-  padding-left: 30px;
-}
-.p-nav__ul li {
-  padding-bottom: 40px;
-}
-.p-nav__ul li a {
-  color: #1E1E1E;
-  width: 120px;
-  display: block;
-  overflow-wrap: break-word;
-}
-@media (min-width: 1025px) {
-  .p-nav__ul {
-    display: flex;
-    justify-content: flex-start;
-    position: absolute;
-    right: 100%;
-  }
-  .p-nav__ul li {
-    margin-right: 64px;
-  }
-  .p-nav__ul li:first-child {
-    display: none;
-  }
-  .p-nav__ul li a {
-    width: auto;
-    white-space: nowrap;
-  }
-}
-
-.p-sns {
-  position: absolute;
-  left: 100%;
-}
-.p-sns img {
-  width: 32px;
-  margin-bottom: 20px;
-}
-.p-sns.is-open {
-  top: -850px;
-  position: absolute;
-  right: 80px;
-  z-index: 15;
-  left: inherit;
-}
-@media (min-width: 1025px) {
-  .p-sns {
-    display: flex;
-    position: absolute;
-    top: 40%;
-    right: 10%;
-  }
-  .p-sns img {
-    width: 48px;
-    margin-right: 33px;
-  }
-}
-
-.p-first-view {
-  width: 100%;
-}
-.p-first-view > img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 900px;
-}
-
 .c-button--profile {
   padding: 18px 20px;
   background: #000052;
@@ -390,6 +275,42 @@ p {
   }
 }
 
+.c-top-title {
+  width: 100vw;
+  display: inline-block;
+  text-align: center;
+  padding: 60px 0;
+}
+.c-top-title h1 {
+  font-family: "M PLUS 1";
+  font-size: 36px;
+  color: #000052;
+}
+.c-top-title p {
+  font-family: "Fredericka the Great";
+  font-size: 20px;
+  color: #1E1E1E;
+}
+@media (min-width: 1025px) {
+  .c-top-title {
+    display: none;
+  }
+}
+
+.c-layer--sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+}
+.c-layer--sidebar.is-open {
+  display: inherit;
+}
+
 .p-card {
   margin: 0 38px;
   display: flex;
@@ -429,8 +350,73 @@ p {
   }
 }
 
-.p-nav--category {
-  margin: 0 94px;
+.p-nav {
+  width: 184px;
+  height: auto;
+  background-color: #fff;
+  overflow-y: auto;
+}
+.p-nav__ul {
+  padding-top: 80px;
+  padding-left: 30px;
+}
+.p-nav__ul li {
+  padding-bottom: 40px;
+}
+.p-nav__ul li a {
+  color: #1E1E1E;
+  width: 120px;
+  display: block;
+  overflow-wrap: break-word;
+}
+@media (min-width: 1025px) {
+  .p-nav__ul {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    right: 100%;
+  }
+  .p-nav__ul li {
+    margin-right: 64px;
+  }
+  .p-nav__ul li:first-child {
+    display: none;
+  }
+  .p-nav__ul--category {
+    margin: 0 94px;
+  }
+  .p-nav__ul--category a {
+    width: auto;
+    white-space: nowrap;
+  }
+}
+
+.p-sns {
+  position: absolute;
+  left: 100%;
+}
+.p-sns img {
+  width: 32px;
+  margin-bottom: 20px;
+}
+.p-sns.is-open {
+  top: -850px;
+  position: absolute;
+  right: 80px;
+  z-index: 15;
+  left: inherit;
+}
+@media (min-width: 1025px) {
+  .p-sns {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+  }
+  .p-sns img {
+    width: 48px;
+    margin-right: 33px;
+  }
 }
 
 .p-profile {
@@ -519,5 +505,15 @@ p {
   .p-history-works h1 {
     max-width: none;
   }
+}
+
+.p-first-view {
+  width: 100%;
+}
+.p-first-view > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 900px;
 }
 /*# sourceMappingURL=style.css.map */
