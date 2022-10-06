@@ -10,4 +10,10 @@
 
     }
 
+    @include breakpoint(pc){
+        img{
+            height: 800px;
+        }
+    }
+
 }

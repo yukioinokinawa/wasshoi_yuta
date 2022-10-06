@@ -2,18 +2,18 @@
 
 .c-top-title {
     width: 100vw;
-    display: inline-block;
     text-align: center;
-    padding: 60px 0;
-
+    padding-top: 170px;
+    height: 410px;
     h1 {
-        font-family: "M PLUS 1";
+        font-family: $M;
         font-size: 36px;
-        color: $navy
+        color: $navy;
+        margin-bottom: 40px;
     }
 
     p {
-        font-family: "Fredericka the Great";
+        font-family: $F;
         font-size: 20px;
         color: #1E1E1E;
     }
