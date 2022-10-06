@@ -1,54 +1,67 @@
 @use "../../Foundation/variable" as *;
 
 .p-nav {
-    width: 184px;
-    height: auto;
-    background-color: #fff;
-    overflow-y: auto;
 
-    //ナビゲーションメニューの塊  レスポンシブでヘッダーに行く
-    &__ul {
-        padding-top: 80px;
-        padding-left: 30px;
+    &--sidebar{
 
-        li {
-            padding-bottom: 40px;
+        &__g-menu{      //サイドバーにあるグローバルメニュー～レスポンシブでヘッダーへいく～
+            margin-bottom: 45px;
+            li{
+                margin-bottom: 35px;
+                max-width: 120px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
 
-            a {
-                color: #1E1E1E;
-                width: 120px;
-                display: block;
-                overflow-wrap: break-word;
-            }
-        }
-    }
-
-    @include breakpoint(pc) {
-        &__ul {
-            display: flex;
-            justify-content: flex-start;
-            position: absolute;
-            right: 100%;
-
-            li {
-                margin-right: 64px;
-
-                &:first-child {
-                    display: none;
+                a{
+                    overflow-wrap: break-word;
                 }
             }
+            
+        }
+
+        &__sns{         //SNSリンクアイコンの塊  レスポンシブでフッターへ移動
+
+            img {
+                width: 32px;
+                margin-bottom: 20px;
+            }
+
+            &.is-open {
+                top: -850px;
+                position: absolute;
+                right: 80px;
+                z-index: 15;
+                left: inherit;
+            }
+
+            @include breakpoint(pc) {
+                display: flex;
+                position: absolute;
+                top: 40%;
+                right: 10%;
+
+                img {
+                    width: 48px;
+                    margin-right: 33px;
+                }
+            }
+                
+        }
+
+    }
+    
 
 
-         &--category{    //archiveページの年代別ナビゲーション
+    &--category{    //archiveページの年代別ナビゲーション
 
         margin: 0 94px;
 
-                a {
-                    width: auto;
-                    white-space: nowrap;
-                }
-            }
+        a {
+            width: auto;
+            white-space: nowrap;
         }
-
     }
 }
+
+    

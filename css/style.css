@@ -43,24 +43,15 @@ p {
 .l-header {
   width: 100%;
   height: 150px;
-}
-.l-header a {
   display: flex;
   justify-content: center;
-}
-.l-header a img {
-  width: 120px;
-  margin: 10px 0;
-}
-.l-header button {
-  position: absolute;
-  right: 0;
-  top: 5%;
+  align-items: center;
+  position: relative;
+  padding-left: 40px;
 }
 @media (min-width: 1025px) {
-  .l-header a {
-    justify-content: flex-start;
-    padding-left: 86px;
+  .l-header {
+    justify-content: inherit;
   }
   .l-header button {
     display: none;
@@ -69,11 +60,13 @@ p {
 
 .l-footer {
   width: 100%;
+  height: 100px;
   text-align: center;
   font-family: "Noto Sans JP";
   font-size: 8px;
   color: #1E1E1E;
   position: relative;
+  padding-top: 30px;
 }
 @media (min-width: 1025px) {
   .l-footer {
@@ -98,18 +91,22 @@ p {
   font-size: 21px;
   color: #1E1E1E;
   transition: all 300ms 0s ease;
-  width: 30%;
-  height: 100vh;
+  width: 50%;
+  height: 100%;
   top: 0;
   position: absolute;
-  left: 100%;
-  display: flex;
-  justify-content: flex-end;
   z-index: 10;
+  background: aliceblue;
+  padding: 127px 0 0 44px;
 }
 .l-sidebar.is-open {
   right: 0;
   left: inherit;
+}
+@media (min-width: 600px) {
+  .l-sidebar {
+    width: 30%;
+  }
 }
 @media (min-width: 1025px) {
   .l-sidebar {
@@ -120,23 +117,17 @@ p {
 .c-button--hamburger {
   width: 40px;
   height: 40px;
-  position: relative;
-  display: block;
-  z-index: 15;
-}
-@media screen and (min-width: 1200px) {
-  .c-button--hamburger {
-    display: none;
-  }
+  background: aqua;
+  position: absolute;
+  right: 25px;
 }
 .c-button--hamburger::before, .c-button--hamburger::after {
   content: "";
-  width: 40px;
+  width: 100%;
   height: 5px;
   background: #000052;
   position: absolute;
   display: block;
-  left: -22px;
   transition: transform 0.2s;
 }
 .c-button--hamburger::before {
@@ -146,11 +137,11 @@ p {
   top: 30px;
 }
 .c-button--hamburger > span {
-  width: 40px;
+  width: 100%;
   height: 5px;
   font-size: 0;
   position: absolute;
-  left: -22px;
+  left: 0;
   top: 15px;
   transition: transform 0.2s;
   background: #000052;
@@ -311,6 +302,25 @@ p {
   display: inherit;
 }
 
+.c-logo--header {
+  width: 120px;
+}
+.c-logo--header img {
+  width: 100%;
+}
+
+.c-wrapper--header-nav {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 1025px) {
+  .c-wrapper--header-nav {
+    width: 100%;
+  }
+}
+
 .p-card {
   margin: 0 38px;
   display: flex;
@@ -350,56 +360,24 @@ p {
   }
 }
 
-.p-nav {
-  width: 184px;
-  height: auto;
-  background-color: #fff;
-  overflow-y: auto;
+.p-nav--sidebar__g-menu {
+  margin-bottom: 45px;
 }
-.p-nav__ul {
-  padding-top: 80px;
-  padding-left: 30px;
+.p-nav--sidebar__g-menu li {
+  margin-bottom: 35px;
+  max-width: 120px;
 }
-.p-nav__ul li {
-  padding-bottom: 40px;
+.p-nav--sidebar__g-menu li:last-child {
+  margin-bottom: 0;
 }
-.p-nav__ul li a {
-  color: #1E1E1E;
-  width: 120px;
-  display: block;
+.p-nav--sidebar__g-menu li a {
   overflow-wrap: break-word;
 }
-@media (min-width: 1025px) {
-  .p-nav__ul {
-    display: flex;
-    justify-content: flex-start;
-    position: absolute;
-    right: 100%;
-  }
-  .p-nav__ul li {
-    margin-right: 64px;
-  }
-  .p-nav__ul li:first-child {
-    display: none;
-  }
-  .p-nav__ul--category {
-    margin: 0 94px;
-  }
-  .p-nav__ul--category a {
-    width: auto;
-    white-space: nowrap;
-  }
-}
-
-.p-sns {
-  position: absolute;
-  left: 100%;
-}
-.p-sns img {
+.p-nav--sidebar__sns img {
   width: 32px;
   margin-bottom: 20px;
 }
-.p-sns.is-open {
+.p-nav--sidebar__sns.is-open {
   top: -850px;
   position: absolute;
   right: 80px;
@@ -407,16 +385,23 @@ p {
   left: inherit;
 }
 @media (min-width: 1025px) {
-  .p-sns {
+  .p-nav--sidebar__sns {
     display: flex;
     position: absolute;
     top: 40%;
     right: 10%;
   }
-  .p-sns img {
+  .p-nav--sidebar__sns img {
     width: 48px;
     margin-right: 33px;
   }
+}
+.p-nav--category {
+  margin: 0 94px;
+}
+.p-nav--category a {
+  width: auto;
+  white-space: nowrap;
 }
 
 .p-profile {
@@ -512,8 +497,8 @@ p {
 }
 .p-first-view > img {
   width: 100%;
+  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 900px;
 }
 /*# sourceMappingURL=style.css.map */

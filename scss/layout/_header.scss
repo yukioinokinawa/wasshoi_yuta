@@ -3,29 +3,13 @@
 .l-header {
     width: 100%;
     height: 150px;
-
-    a {
-        display: flex;
-        justify-content: center;
-
-        img {
-            width: 120px;
-            margin: 10px 0;
-        }
-    }
-
-    button {
-        position: absolute;
-        right: 0;
-        top: 5%;
-    }
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 40px;
     @include breakpoint(pc) {
-        a {
-            justify-content: flex-start;
-            padding-left: 86px;
-        }
-
+        justify-content: inherit;
         button {
             display: none;
         }
