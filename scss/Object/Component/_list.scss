@@ -1,0 +1,17 @@
+@use "../../Foundation/variable" as *;
+
+.c-list{
+
+    &--profile{
+        margin: 0 auto 48px;
+        max-width: 473px;
+        li{
+            margin-bottom: 10px;
+
+        }
+        li:last-child{
+            margin-bottom: 0;
+        }
+
+    }
+}

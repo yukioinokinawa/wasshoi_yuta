@@ -1,14 +1,18 @@
 @use "../../Foundation/variable" as *;
 
-.c-thumbnail {
+.c-thumbnail{
+    width:  300px;
+    height: 322px;
+    border-radius: 50%;
+    background: url("/imgs/about-page(sp).jpg");
+    background-size: 164%;
+    background-position: -170px 22%;
+    margin: auto;
 
-    &--maru {
-        //サムネを丸型にするとき
-
-    }
-
-    &--shikaku {
-        //サムネを四角形にするとき
-
+    @include breakpoint(pc){
+        background: url("/imgs/about-page(pc).jpg");
+        height: 530px;
+        width: 30%;
+        background-size: contain;
     }
 }
