@@ -3,7 +3,7 @@
 
 @use "foundation/_reset";
 @use "foundation/_base";
-@use "foundation/_variable";
+@use "foundation/variable";
 
 //----------------------------------
 // Layouts
@@ -25,8 +25,13 @@
 @use "object/Component/thumbnail";
 @use "object/Component/title";
 @use "object/Component/shadow";
+
 @use "object/Component/list";
 @use "object/Component/flex-box";
+
+@use "object/Component/top-title";
+@use "object/Component/layer";
+
 // ----------
 // Project
 // ----------
@@ -35,8 +40,13 @@
 @use "object/Project/nav";
 @use "object/Project/section";
 @use "object/Project/sns";
+
 @use "object/Project/profile";
 @use "object/Project/career";
+
+@use "object/Project/first-view";
+
+
 // ----------
 // Utility
 // ----------

@@ -4,6 +4,64 @@
 
     &--hamburger {
         //ハンバーガーボタン
+        width: 40px;
+        height: 40px;
+        position: relative;
+        display: block;
+        z-index: 15;
+
+        @media screen and (min-width : 1200px) {
+            display: none;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            width: 40px;
+            height: 5px;
+            background: $navy;
+            position: absolute;
+            display: block;
+            left: -22px;
+            transition: transform 0.2s;
+        }
+
+        &::before {
+            top: 0px;
+        }
+
+        &::after {
+            top: 30px;
+        }
+
+        >span {
+            width: 40px;
+            height: 5px;
+            font-size: 0;
+            position: absolute;
+            left: -22px;
+            top: 15px;
+            transition: transform 0.2s;
+            background: $navy;
+        }
+
+        &.is-open {
+            height: 40px;
+
+            &::before {
+                transform: rotate(45deg);
+                top: 10px;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+                top: 10px;
+            }
+
+            >span {
+                background: none;
+            }
+        }
 
     }
 
