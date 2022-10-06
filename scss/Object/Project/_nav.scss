@@ -37,11 +37,18 @@
                     display: none;
                 }
 
+
+
+    &--category{    //archiveページの年代別ナビゲーション
+
+        margin: 0 94px;
+
                 a {
                     width: auto;
                     white-space: nowrap;
                 }
             }
         }
+
     }
 }

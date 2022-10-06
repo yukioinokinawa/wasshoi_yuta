@@ -29,8 +29,12 @@
 @use "object/Component/list";
 @use "object/Component/flex-box";
 
+@use "object/Component/grid";
+
+
 @use "object/Component/top-title";
 @use "object/Component/layer";
+
 
 // ----------
 // Project
@@ -44,7 +48,11 @@
 @use "object/Project/profile";
 @use "object/Project/career";
 
+@use "object/Project/history-works";
+
+
 @use "object/Project/first-view";
+
 
 
 // ----------

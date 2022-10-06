@@ -294,19 +294,17 @@ p {
   display: block;
   width: 320px;
   margin: auto;
-  box-shadow: 7px 5px 0px #E8EB5E;
 }
 .c-button--go-single {
-  padding: 18px 115px;
+  padding: 18px 103px;
   background: #000052;
   color: #fff;
   font-size: 15px;
   border-radius: 100px;
-  min-width: 320px;
+  min-width: 290px;
   display: block;
-  width: 320px;
+  width: 100%;
   margin: auto;
-  box-shadow: 7px 5px 0px #E8EB5E;
   position: relative;
 }
 .c-button--go-single::after {
@@ -340,6 +338,10 @@ p {
   font-size: 32px;
   color: #000052;
 }
+.c-shadow {
+  box-shadow: 7px 5px 0px #E8EB5E;
+}
+
 .c-list--profile {
   margin: 0 auto 48px;
   max-width: 473px;
@@ -350,12 +352,85 @@ p {
 .c-list--profile li:last-child {
   margin-bottom: 0;
 }
+.c-list--history {
+  text-align: center;
+}
+.c-list--history li {
+  margin-bottom: 22px;
+}
+.c-list--history li:last-child {
+  margin-bottom: 0;
+}
+.c-list--history a {
+  font-size: 27px;
+  font-weight: bold;
+  color: #222222;
+}
+@media (min-width: 1025px) {
+  .c-list--history {
+    width: 630px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 90px;
+  }
+}
 
 @media (min-width: 1025px) {
   .c-flex-box--profile {
     display: flex;
     justify-content: space-between;
   }
+}
+
+@media (min-width: 1025px) {
+  .c-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 120px;
+  }
+}
+
+.p-card {
+  margin: 0 38px;
+  display: flex;
+  justify-content: center;
+}
+.p-card li {
+  margin-bottom: 65px;
+  max-width: 350px;
+}
+.p-card img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-card img, .p-card p {
+  margin-bottom: 20px;
+}
+.p-card p {
+  line-height: 1.75;
+  color: #5d5d63;
+}
+@media (min-width: 600px) {
+  .p-card {
+    margin: 0 171px;
+  }
+  .p-card li {
+    width: 400px;
+    max-width: 400px;
+  }
+  .p-card img {
+    width: 100%;
+    height: 400px;
+  }
+  .p-card a {
+    padding: 18px 154px;
+  }
+}
+
+.p-nav--category {
+  margin: 0 94px;
 }
 
 .p-profile {
@@ -428,6 +503,21 @@ p {
   .p-career span {
     font-size: 32px;
     font-weight: bold;
+  }
+}
+
+.p-history-works {
+  margin: 40px auto;
+}
+.p-history-works h1 {
+  max-width: 163px;
+  margin: 0 auto 43px;
+  line-height: 1;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .p-history-works h1 {
+    max-width: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
