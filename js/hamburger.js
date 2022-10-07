@@ -1,18 +1,22 @@
 jQuery(function ($) {
-    if (window.matchMedia("(max-width: 1025px)").matches) {
-        $(".js-hamburger").on("click", function () {
-            $(this).toggleClass("is-open");
 
-            $(".c-layer--sidebar").toggleClass("is-open");
-            $(".l-sidebar").toggleClass("is-open");
-            $("body").toggleClass("is-open");
-            $(".p-sns").toggleClass("is-open");
+    $(".js-hamburger").on("click", function () {
+        console.log("テスト");
+        $(this).toggleClass("is-open");
+        $(".c-layer--sidebar").toggleClass("is-open");
+        $(".l-sidebar").toggleClass("is-open");
+        $("body").toggleClass("is-open");
+    });
 
-        } else {
-            $('.c-layer--sidebar').hide();
-            $('.l-sidebar').hide();
+    $(window).on('resize', function() {
+        if (window.innerWidth > 1025) {
+            $(".js-hamburger").removeClass("is-open");
+            $(".c-layer--sidebar").removeClass("is-open");
+            $(".l-sidebar").removeClass("is-open");
+            $("body").removeClass("is-open");    
         }
     });
+});
 
 
 

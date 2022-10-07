@@ -1,31 +1,5 @@
 @use "../../Foundation/variable" as *;
 
 .p-sns {
-    position: absolute;
-    left: 100%; //SNSリンクアイコンの塊  レスポンシブでフッターへ移動
-
-    img {
-        width: 32px;
-        margin-bottom: 20px;
-    }
-
-    &.is-open {
-        top: -850px;
-        position: absolute;
-        right: 80px;
-        z-index: 15;
-        left: inherit;
-    }
-
-    @include breakpoint(pc) {
-        display: flex;
-        position: absolute;
-        top: 40%;
-        right: 10%;
-
-        img {
-            width: 48px;
-            margin-right: 33px;
-        }
-    }
+    
 }

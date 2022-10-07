@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  width: 100%;
+  width: calc(100vw - 17px);
   height: 100%;
   position: relative;
   overflow-x: hidden;
@@ -43,24 +43,15 @@ p {
 .l-header {
   width: 100%;
   height: 150px;
-}
-.l-header a {
   display: flex;
   justify-content: center;
-}
-.l-header a img {
-  width: 120px;
-  margin: 10px 0;
-}
-.l-header button {
-  position: absolute;
-  right: 0;
-  top: 5%;
+  align-items: center;
+  position: relative;
 }
 @media (min-width: 1025px) {
-  .l-header a {
-    justify-content: flex-start;
-    padding-left: 86px;
+  .l-header {
+    padding-left: 40px;
+    justify-content: inherit;
   }
   .l-header button {
     display: none;
@@ -69,11 +60,13 @@ p {
 
 .l-footer {
   width: 100%;
+  height: 100px;
   text-align: center;
   font-family: "Noto Sans JP";
   font-size: 8px;
   color: #1E1E1E;
   position: relative;
+  padding-top: 30px;
 }
 @media (min-width: 1025px) {
   .l-footer {
@@ -84,7 +77,7 @@ p {
   }
   .l-footer > p {
     position: absolute;
-    top: 50%;
+    top: 57px;
     margin-left: 220px;
   }
 }
@@ -97,46 +90,47 @@ p {
   font-family: "Fredericka the Great";
   font-size: 21px;
   color: #1E1E1E;
-  transition: all 300ms 0s ease;
-  width: 30%;
-  height: 100vh;
+  width: 50%;
+  height: 100%;
+  right: -100%;
   top: 0;
   position: absolute;
-  left: 100%;
-  display: flex;
-  justify-content: flex-end;
   z-index: 10;
+  background: #fff;
+  padding: 127px 0 0 44px;
+  transition: all 1s ease-in;
 }
-.l-sidebar.is-open {
-  right: 0;
-  left: inherit;
+@media (min-width: 600px) {
+  .l-sidebar {
+    width: 30%;
+  }
 }
 @media (min-width: 1025px) {
   .l-sidebar {
     font-size: 32px;
+    right: -30%;
+    transition: none;
   }
+}
+.l-sidebar.is-open {
+  right: -17px;
+  transition: all 0.7s;
 }
 
 .c-button--hamburger {
   width: 40px;
   height: 40px;
-  position: relative;
-  display: block;
+  position: absolute;
+  right: 25px;
   z-index: 15;
-}
-@media screen and (min-width: 1200px) {
-  .c-button--hamburger {
-    display: none;
-  }
 }
 .c-button--hamburger::before, .c-button--hamburger::after {
   content: "";
-  width: 40px;
+  width: 100%;
   height: 5px;
   background: #000052;
   position: absolute;
   display: block;
-  left: -22px;
   transition: transform 0.2s;
 }
 .c-button--hamburger::before {
@@ -146,50 +140,48 @@ p {
   top: 30px;
 }
 .c-button--hamburger > span {
-  width: 40px;
+  width: 100%;
   height: 5px;
   font-size: 0;
   position: absolute;
-  left: -22px;
+  left: 0;
   top: 15px;
   transition: transform 0.2s;
   background: #000052;
 }
 .c-button--hamburger.is-open {
-  height: 40px;
+  right: 25px;
 }
 .c-button--hamburger.is-open::before {
   transform: rotate(45deg);
-  top: 10px;
+  top: 15px;
 }
 .c-button--hamburger.is-open::after {
   transform: rotate(-45deg);
-  top: 10px;
+  top: 15px;
 }
 .c-button--hamburger.is-open > span {
   background: none;
 }
-.c-button--profile {
-  padding: 18px 20px;
+.c-button--profile, .c-button--go-single {
   background: #000052;
   color: #fff;
   font-size: 15px;
   border-radius: 100px;
-  min-width: 320px;
   display: block;
-  width: 320px;
   margin: auto;
+  font-family: "Noto Sans JP";
+}
+.c-button--profile {
+  padding: 18px 20px;
+  min-width: 320px;
+  width: 320px;
 }
 .c-button--go-single {
   padding: 18px 103px;
-  background: #000052;
-  color: #fff;
-  font-size: 15px;
-  border-radius: 100px;
   min-width: 290px;
   display: block;
   width: 100%;
-  margin: auto;
   position: relative;
 }
 .c-button--go-single::after {
@@ -202,22 +194,22 @@ p {
   width: 300px;
   height: 322px;
   border-radius: 50%;
-  background: url("/imgs/about-page(sp).jpg");
-  background-size: 164%;
-  background-position: -170px 22%;
+  background: url("/imgs/about-page2(sp).jpg");
+  background-size: cover;
   margin: auto;
 }
 @media (min-width: 1025px) {
   .c-thumbnail {
-    background: url("/imgs/about-page(pc).jpg");
+    background: url("/imgs/about-page(pc)2.jpg");
     height: 530px;
     width: 30%;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
 .c-title--page {
   font-size: 32px;
+  font-family: "Fredericka the Great";
 }
 .c-title--section {
   font-size: 32px;
@@ -277,14 +269,15 @@ p {
 
 .c-top-title {
   width: 100vw;
-  display: inline-block;
   text-align: center;
-  padding: 60px 0;
+  padding-top: 170px;
+  height: 410px;
 }
 .c-top-title h1 {
   font-family: "M PLUS 1";
   font-size: 36px;
   color: #000052;
+  margin-bottom: 40px;
 }
 .c-top-title p {
   font-family: "Fredericka the Great";
@@ -309,6 +302,25 @@ p {
 }
 .c-layer--sidebar.is-open {
   display: inherit;
+}
+
+.c-logo--header {
+  width: 120px;
+}
+.c-logo--header img {
+  width: 100%;
+}
+
+.c-wrapper--header-nav {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 1025px) {
+  .c-wrapper--header-nav {
+    width: 100%;
+  }
 }
 
 .p-card {
@@ -350,56 +362,39 @@ p {
   }
 }
 
-.p-nav {
-  width: 184px;
-  height: auto;
-  background-color: #fff;
-  overflow-y: auto;
+.p-nav--sidebar__g-menu {
+  margin-bottom: 45px;
 }
-.p-nav__ul {
-  padding-top: 80px;
-  padding-left: 30px;
+.p-nav--sidebar__g-menu li {
+  margin-bottom: 35px;
+  max-width: 120px;
 }
-.p-nav__ul li {
-  padding-bottom: 40px;
+.p-nav--sidebar__g-menu li:last-child {
+  margin-bottom: 0;
 }
-.p-nav__ul li a {
-  color: #1E1E1E;
-  width: 120px;
-  display: block;
+.p-nav--sidebar__g-menu li a {
   overflow-wrap: break-word;
 }
 @media (min-width: 1025px) {
-  .p-nav__ul {
+  .p-nav--sidebar__g-menu {
     display: flex;
-    justify-content: flex-start;
     position: absolute;
-    right: 100%;
+    left: -230%;
+    top: 57px;
   }
-  .p-nav__ul li {
-    margin-right: 64px;
+  .p-nav--sidebar__g-menu li {
+    margin: 0 64px 0 0;
+    max-width: inherit;
   }
-  .p-nav__ul li:first-child {
+  .p-nav--sidebar__g-menu li:first-child {
     display: none;
   }
-  .p-nav__ul--category {
-    margin: 0 94px;
-  }
-  .p-nav__ul--category a {
-    width: auto;
-    white-space: nowrap;
-  }
 }
-
-.p-sns {
-  position: absolute;
-  left: 100%;
-}
-.p-sns img {
+.p-nav--sidebar__sns img {
   width: 32px;
   margin-bottom: 20px;
 }
-.p-sns.is-open {
+.p-nav--sidebar__sns.is-open {
   top: -850px;
   position: absolute;
   right: 80px;
@@ -407,16 +402,31 @@ p {
   left: inherit;
 }
 @media (min-width: 1025px) {
-  .p-sns {
+  .p-nav--sidebar__sns {
     display: flex;
     position: absolute;
-    top: 40%;
-    right: 10%;
+    bottom: 40px;
+    right: 130%;
   }
-  .p-sns img {
-    width: 48px;
+  .p-nav--sidebar__sns li {
     margin-right: 33px;
   }
+  .p-nav--sidebar__sns a {
+    display: block;
+    width: 45px;
+    height: 45px;
+  }
+  .p-nav--sidebar__sns img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.p-nav--category {
+  margin: 0 94px;
+}
+.p-nav--category a {
+  width: auto;
+  white-space: nowrap;
 }
 
 .p-profile {
@@ -435,11 +445,13 @@ p {
   font-size: 32px;
   margin-bottom: 20px;
   color: #000052;
+  font-family: "M PLUS 1";
 }
 .p-profile span {
   display: block;
   font-size: 20px;
   margin-bottom: 32px;
+  font-family: "M PLUS 1";
 }
 .p-profile h1, .p-profile h2, .p-profile span {
   text-align: center;
@@ -508,12 +520,17 @@ p {
 }
 
 .p-first-view {
-  width: 100%;
+  width: 100vw;
 }
 .p-first-view > img {
   width: 100%;
+  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 900px;
+}
+@media (min-width: 1025px) {
+  .p-first-view img {
+    height: 800px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
