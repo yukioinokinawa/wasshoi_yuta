@@ -52,7 +52,7 @@
             @include breakpoint(pc) {
                 display: flex;
                 position: absolute;
-                top: 92%;
+                bottom: 40px;
                 right: 130%;
 
                 li{

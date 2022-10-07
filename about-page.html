@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>サイトのタイトルを入力</title>
+    <title>ABOUT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- ブレークポイントを作れるようにする -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> <!-- リセットCSSの読み込み -->
     <link rel="stylesheet" href="css/style.css"> <!-- スタイルイートの読み込み -->
@@ -23,7 +23,7 @@
 <body>
     
     <header class="l-header">
-        <a href="#"><img src="/imgs/header-logo.jpg" alt="わっしょいゆーたロゴ"></a>
+        <a class="c-logo--header" href="#"><img src="/imgs/header-logo.jpg" alt="わっしょいゆーたロゴ"></a>
         <button class="c-button--hamburger js-hamburger">
             <span>menuボタン</span>
         </button>
@@ -120,23 +120,24 @@
     </main>
     <footer class="l-footer">
         <p>©️わっしょいゆ〜た / 2022</p>
-        <ul class="p-sns">
+    </footer>
+    <aside class="l-sidebar p-nav--sidebar">
+        <ul class="p-nav--sidebar__g-menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PROFILE</a></li>
+            <li><a href="#">HISTORY & WORKS</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+
+        <ul class="p-nav--sidebar__sns">
             <li><a href="#"><img src="/imgs/facebook-icon.png" alt="facebook"></a></li>
             <li><a href="#"><img src="/imgs/twitter-icon.png" alt="twitter"></a></li>
             <li><a href="#"><img src="/imgs/instagram-icon.png" alt="Instagram"></a></li>
         </ul>
-    </footer>
-    <aside class="l-sidebar">
-        <nav class="p-nav">
-            <ul class="p-nav__ul">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PROFILE</a></li>
-                <li><a href="#">HISTORY & WORKS</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
+
     </aside>
     <div class="c-layer--sidebar"></div>
+    <script src="/js/hamburger.js"></script>
 </body>
 
 </html>

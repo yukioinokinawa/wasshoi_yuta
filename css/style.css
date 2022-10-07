@@ -212,6 +212,7 @@ p {
 
 .c-title--page {
   font-size: 32px;
+  font-family: "Fredericka the Great";
 }
 .c-title--section {
   font-size: 32px;
@@ -407,7 +408,7 @@ p {
   .p-nav--sidebar__sns {
     display: flex;
     position: absolute;
-    top: 92%;
+    bottom: 40px;
     right: 130%;
   }
   .p-nav--sidebar__sns li {
@@ -447,11 +448,13 @@ p {
   font-size: 32px;
   margin-bottom: 20px;
   color: #000052;
+  font-family: "M PLUS 1";
 }
 .p-profile span {
   display: block;
   font-size: 20px;
   margin-bottom: 32px;
+  font-family: "M PLUS 1";
 }
 .p-profile h1, .p-profile h2, .p-profile span {
   text-align: center;
