@@ -59,17 +59,22 @@
 
     }
 
-    &--profile {
-        //プロフィールダウンロードボタン
-        padding: 18px 20px;
+    &--profile, &--go-single{   //ボタン共通のCSS
         background: $navy;
         color: $white;
         font-size: 15px;
         border-radius: 100px;
-        min-width: 320px;
         display: block;
-        width: 320px;
         margin: auto;
+        font-family: $noto;
+
+    }
+
+    &--profile {
+        //プロフィールダウンロードボタン
+        padding: 18px 20px;
+        min-width: 320px;
+        width: 320px;
     }
 
 
@@ -78,14 +83,9 @@
     &--go-single {
         //シングルページに行くボタン
         padding: 18px 103px;
-        background: #000052;
-        color: #fff;
-        font-size: 15px;
-        border-radius: 100px;
         min-width: 290px;
         display: block;
         width: 100%;
-        margin: auto;
         position: relative;
         &::after{
             position: absolute;
