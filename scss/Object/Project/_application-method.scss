@@ -14,4 +14,17 @@
     p {
         margin-bottom: 25px;
     }
+
+    img {
+        display: none;
+
+        @include breakpoint(pc) {
+            display: block;
+            margin: 0 auto;
+            width: 396.38px;
+            height: 419px;
+            border-radius: 100%;
+            object-fit: cover;
+        }
+    }
 }
