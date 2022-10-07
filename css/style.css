@@ -198,6 +198,62 @@ p {
   top: 20px;
   right: 25px;
 }
+.c-button--submit {
+  padding: 18px 103px;
+  background: #000052;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 100px;
+  min-width: 290px;
+  display: block;
+  width: 280px;
+  margin: auto;
+  position: relative;
+}
+.c-button--submit::after {
+  position: absolute;
+  content: "▶";
+  top: 20px;
+  right: 25px;
+}
+.c-panel--main {
+  text-align: center;
+}
+.c-panel--main__pc {
+  display: none;
+}
+.c-panel--main__mobile {
+  display: inline-block;
+  margin: 50px 0;
+  text-align: center;
+  width: 329px;
+  height: 100%;
+  border: 1px solid #000052;
+  border-radius: 15px;
+  box-shadow: 5px 10px #E8EB5E;
+}
+.c-panel--main__mobile > p {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000052;
+  margin-bottom: 0;
+}
+.c-panel--sub {
+  display: inline-block;
+  margin: 50px 0;
+  text-align: center;
+  width: 330px;
+  height: 100%;
+  border: 1px solid #E8EB5E;
+  border-radius: 15px;
+}
+.c-panel--sub h2 {
+  margin: 10px 0;
+}
+.c-panel--sub p {
+  margin: 10px 0;
+}
+
 .c-thumbnail {
   width: 300px;
   height: 322px;
@@ -223,6 +279,17 @@ p {
   font-size: 32px;
   color: #000052;
 }
+.c-title--number {
+  font-family: "Noto Sans JP";
+  font-size: 24px;
+  color: 10E1E;
+  padding-bottom: 20px;
+}
+.c-title--number::first-letter {
+  font-family: "Fredericka the Great";
+  font-size: 45px;
+}
+
 .c-shadow {
   box-shadow: 7px 5px 0px #E8EB5E;
 }
@@ -311,6 +378,12 @@ p {
   display: inherit;
 }
 
+.c-contact-form input {
+  height: 50px;
+  width: 270px;
+  border: 1px solid #000052;
+}
+
 .p-card {
   margin: 0 38px;
   display: flex;
@@ -348,6 +421,10 @@ p {
   .p-card a {
     padding: 18px 154px;
   }
+}
+
+.p-form {
+  text-align: center;
 }
 
 .p-nav {
@@ -515,5 +592,18 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
   height: 900px;
+}
+
+.p-application-method {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+}
+.p-application-method section {
+  margin-bottom: 25px;
+}
+.p-application-method p {
+  margin-bottom: 25px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+@use "../../Foundation/variable" as *;
+
+.c-contact-form {
+
+    input {
+        height: 50px;
+        width: 270px;
+        border: 1px solid $navy;
+
+    }
+}

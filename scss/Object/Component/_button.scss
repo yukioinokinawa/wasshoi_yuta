@@ -79,7 +79,7 @@
     }
 
 
-    
+
 
     &--go-single {
         //シングルページに行くボタン
@@ -93,7 +93,8 @@
         width: 100%;
         margin: auto;
         position: relative;
-        &::after{
+
+        &::after {
             position: absolute;
             content: "▶";
             top: 20px;
@@ -103,7 +104,23 @@
 
     &--submit {
         //フォームの送信ボタン
+        padding: 18px 103px;
+        background: #000052;
+        color: #fff;
+        font-size: 15px;
+        border-radius: 100px;
+        min-width: 290px;
+        display: block;
+        width: 280px;
+        margin: auto;
+        position: relative;
 
+        &::after {
+            position: absolute;
+            content: "▶";
+            top: 20px;
+            right: 25px;
+        }
     }
 
     &--sample {

@@ -1,0 +1,17 @@
+@use "../../Foundation/variable" as *;
+
+.p-application-method {
+    //ご依頼方法
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+
+    section {
+        margin-bottom: 25px;
+    }
+
+    p {
+        margin-bottom: 25px;
+    }
+}
