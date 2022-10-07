@@ -6,23 +6,27 @@
     color: #1E1E1E;
     width: 50%;
     height: 100%;
-    right: -30%;
+    right: -100%;
     top: 0;
     position: absolute;
     z-index: 10;
-    background: aliceblue;
+    background: $white;
     padding: 127px 0 0 44px;
-    
-    &.is-open {
-        right: -17px;
-        transition: all .3s;
-    }
+    transition: all 1s ease-in;
 
+    
     @include breakpoint(tablet){
         width: 30%;
     }
     @include breakpoint(pc) {
         font-size: 32px;
-        
+        right: -30%;
+        transition: none;
     }
+
+    &.is-open {
+        right: -17px;
+        transition: all .7s;
+    }
+
 }

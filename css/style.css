@@ -92,16 +92,13 @@ p {
   color: #1E1E1E;
   width: 50%;
   height: 100%;
-  right: -30%;
+  right: -100%;
   top: 0;
   position: absolute;
   z-index: 10;
-  background: aliceblue;
+  background: #fff;
   padding: 127px 0 0 44px;
-}
-.l-sidebar.is-open {
-  right: -17px;
-  transition: all 0.3s;
+  transition: all 1s ease-in;
 }
 @media (min-width: 600px) {
   .l-sidebar {
@@ -111,7 +108,13 @@ p {
 @media (min-width: 1025px) {
   .l-sidebar {
     font-size: 32px;
+    right: -30%;
+    transition: none;
   }
+}
+.l-sidebar.is-open {
+  right: -17px;
+  transition: all 0.7s;
 }
 
 .c-button--hamburger {
@@ -517,7 +520,7 @@ p {
 }
 
 .p-first-view {
-  width: 100%;
+  width: 100vw;
 }
 .p-first-view > img {
   width: 100%;
