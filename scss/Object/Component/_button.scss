@@ -121,6 +121,11 @@
             top: 20px;
             right: 25px;
         }
+
+        @include breakpoint(tablet) {
+            width: 440px;
+            font-size: 24px;
+        }
     }
 
     &--sample {

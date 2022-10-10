@@ -6,9 +6,6 @@
         text-align: center;
 
         //コンタクトページの見出し用パネル
-        &__pc {
-            display: none;
-        }
 
         &__mobile {
             display: inline-block;
@@ -16,7 +13,7 @@
             text-align: center;
             width: 329px;
             height: 100%;
-            border: 1px solid $navy;
+            border: 2px solid $navy;
             border-radius: 15px;
             box-shadow: 5px 10px $yellow;
 
@@ -24,7 +21,39 @@
                 font-size: 32px;
                 font-weight: bold;
                 color: $navy;
-                margin-bottom: 0;
+                margin: 20px 0;
+            }
+
+        }
+
+        &__pc {
+            display: none;
+
+        }
+
+        @include breakpoint(tablet) {
+
+            &__pc {
+                display: inline-block;
+                margin: 50px 0;
+                text-align: center;
+                width: 438px;
+                height: 100%;
+                border: 2px solid $navy;
+                border-radius: 15px;
+                box-shadow: 5px 10px $yellow;
+
+                >p {
+                    font-size: 32px;
+                    font-weight: bold;
+                    color: $navy;
+                    margin: 20px 0;
+                }
+
+            }
+
+            &__mobile {
+                display: none;
             }
         }
 
@@ -40,12 +69,13 @@
         border: 1px solid $yellow;
         border-radius: 15px;
 
-        h2 {
+        h3 {
             margin: 10px 0;
+            font-size: 15px;
         }
 
         p {
-            margin: 10px 0;
+            margin: 20px 30px;
         }
     }
 }
