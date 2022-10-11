@@ -78,7 +78,7 @@
     }
 
 
-    
+
 
     &--go-single {
         //シングルページに行くボタン
@@ -87,7 +87,8 @@
         display: block;
         width: 100%;
         position: relative;
-        &::after{
+
+        &::after {
             position: absolute;
             content: "▶";
             top: 20px;
@@ -97,7 +98,28 @@
 
     &--submit {
         //フォームの送信ボタン
+        padding: 18px 103px;
+        background: #000052;
+        color: #fff;
+        font-size: 15px;
+        border-radius: 100px;
+        min-width: 290px;
+        display: block;
+        width: 280px;
+        margin: 40px auto;
+        position: relative;
 
+        &::after {
+            position: absolute;
+            content: "▶";
+            top: 20px;
+            right: 25px;
+        }
+
+        @include breakpoint(tablet) {
+            width: 440px;
+            font-size: 24px;
+        }
     }
 
     &--sample {

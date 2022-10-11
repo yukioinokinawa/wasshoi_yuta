@@ -30,8 +30,13 @@
 @use "object/Component/grid";
 @use "object/Component/top-title";
 @use "object/Component/layer";
+
+@use "object/Component/contact-form";
+@use "object/Component/icon";
+
 @use "object/Component/logo";
 @use "object/Component/wrapper";
+
 
 // ----------
 // Project
@@ -45,6 +50,7 @@
 @use "object/Project/career";
 @use "object/Project/history-works";
 @use "object/Project/first-view";
+@use "object/Project/application-method";
 
 
 

@@ -190,6 +190,90 @@ p {
   top: 20px;
   right: 25px;
 }
+.c-button--submit {
+  padding: 18px 103px;
+  background: #000052;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 100px;
+  min-width: 290px;
+  display: block;
+  width: 280px;
+  margin: 40px auto;
+  position: relative;
+}
+.c-button--submit::after {
+  position: absolute;
+  content: "▶";
+  top: 20px;
+  right: 25px;
+}
+@media (min-width: 600px) {
+  .c-button--submit {
+    width: 440px;
+    font-size: 24px;
+  }
+}
+.c-panel--main {
+  text-align: center;
+}
+.c-panel--main__mobile {
+  display: inline-block;
+  margin: 50px 0;
+  text-align: center;
+  width: 329px;
+  height: 100%;
+  border: 2px solid #000052;
+  border-radius: 15px;
+  box-shadow: 5px 10px #E8EB5E;
+}
+.c-panel--main__mobile > p {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000052;
+  margin: 20px 0;
+}
+.c-panel--main__pc {
+  display: none;
+}
+@media (min-width: 600px) {
+  .c-panel--main__pc {
+    display: inline-block;
+    margin: 50px 0;
+    text-align: center;
+    width: 438px;
+    height: 100%;
+    border: 2px solid #000052;
+    border-radius: 15px;
+    box-shadow: 5px 10px #E8EB5E;
+  }
+  .c-panel--main__pc > p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000052;
+    margin: 20px 0;
+  }
+  .c-panel--main__mobile {
+    display: none;
+  }
+}
+.c-panel--sub {
+  display: inline-block;
+  margin: 50px 50px;
+  text-align: center;
+  min-width: 330px;
+  height: 100%;
+  border: 1px solid #E8EB5E;
+  border-radius: 15px;
+}
+.c-panel--sub h3 {
+  margin: 10px 0;
+  font-size: 15px;
+}
+.c-panel--sub p {
+  margin: 20px 30px;
+}
+
 .c-thumbnail {
   width: 300px;
   height: 322px;
@@ -215,6 +299,17 @@ p {
   font-size: 32px;
   color: #000052;
 }
+.c-title--number {
+  font-family: "Noto Sans JP";
+  font-size: 24px;
+  color: 10E1E;
+  padding-bottom: 20px;
+}
+.c-title--number::first-letter {
+  font-family: "Fredericka the Great";
+  font-size: 45px;
+}
+
 .c-shadow {
   box-shadow: 7px 5px 0px #E8EB5E;
 }
@@ -304,6 +399,38 @@ p {
   display: inherit;
 }
 
+
+.c-contact-form {
+  display: block;
+  justify-content: center;
+  margin: 40px 0;
+}
+.c-contact-form input {
+  height: 50px;
+  min-width: 270px;
+  border: 1px solid #000052;
+  margin-bottom: 40px;
+}
+.c-contact-form textarea {
+  border: 1px solid #000052;
+}
+.c-contact-form label {
+  margin-top: 40px;
+}
+@media (min-width: 600px) {
+  .c-contact-form input {
+    width: 440px;
+  }
+  .c-contact-form textarea {
+    width: 440px;
+  }
+}
+
+.c-icon--arrow {
+  color: #000052;
+}
+
+
 .c-logo--header {
   width: 120px;
 }
@@ -322,6 +449,7 @@ p {
     width: 100%;
   }
 }
+
 
 .p-card {
   margin: 0 38px;
@@ -362,8 +490,25 @@ p {
   }
 }
 
+
+.p-form {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  font-size: 24px;
+  font-family: "Noto Sans JP";
+}
+
+.p-nav {
+  width: 184px;
+  height: auto;
+  background-color: #fff;
+  overflow-y: auto;
+
 .p-nav--sidebar__g-menu {
   margin-bottom: 45px;
+
 }
 .p-nav--sidebar__g-menu li {
   margin-bottom: 35px;
@@ -531,6 +676,33 @@ p {
 @media (min-width: 1025px) {
   .p-first-view img {
     height: 800px;
+  }
+}
+
+.p-application-method {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+}
+.p-application-method section {
+  margin-bottom: 25px;
+}
+.p-application-method p {
+  margin-bottom: 25px;
+}
+.p-application-method img {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .p-application-method img {
+    display: block;
+    margin: 0 auto;
+    width: 396.38px;
+    height: 419px;
+    border-radius: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /*# sourceMappingURL=style.css.map */

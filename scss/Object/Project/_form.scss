@@ -2,5 +2,10 @@
 
 .p-form {
     //コンタクトフォームの管理
-
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    font-size: 24px;
+    font-family: "Noto Sans JP";
 }
