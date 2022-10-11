@@ -21,26 +21,27 @@
 </head>
 
 <body>
-    <header>
-        <a href="#"><img src="" alt="わっしょいゆーたロゴ"></a>
-        <button>
+    <header class="l-header">
+        <a class="c-logo--header" href="#"><img src="/imgs/header-logo.jpg" alt="わっしょいゆーたロゴ"></a>
+        <button class="c-button--hamburger js-hamburger">
             <span>menuボタン</span>
         </button>
     </header>
-    <!--header-->
     <main class="l-main">
-        <h1 class="c-title--page">CONTACT</h1>
-        <section class="c-panel--main">
-            <div class="c-panel--main__pc">
-                <p>わっしょいゆ〜たへの<br>
-                    お仕事のご依頼について</p>
-            </div>
+        <div class="p-contact">
+            <h1 class="c-title--page">CONTACT</h1>
+            <section class="c-panel--main">
+                <div class="c-panel--main__pc">
+                    <p>わっしょいゆ〜たへの<br>
+                        お仕事のご依頼について</p>
+                </div>
 
-            <div class="c-panel--main__mobile">
-                <p>お仕事の<br>
-                    ご依頼について</p>
-            </div>
-        </section>
+                <div class="c-panel--main__mobile">
+                    <p>お仕事の<br>
+                        ご依頼について</p>
+                </div>
+            </section>
+        </div>
         <article class="p-application-method ">
 
             <section>
@@ -82,15 +83,15 @@
             </section>
             <section class="c-contact-form">
                 <form action="confirm.php" method="post">
-                    <label>お名前※</label><br>
+                    <label>お名前<span>※</span></label><br>
                     <input type="text" name="name"><br>
-                    <label>ご連絡先※</label><br>
+                    <label>ご連絡先<span>※</span></label><br>
                     <input type="text" name="address"><br>
                     <label for="text">ご希望日時</label><br>
                     <input type="text" name="name"><br>
                     <label>ご希望の内容</label><br>
                     <input type="text" name="name"><br>
-                    <label>その他</label><br>
+                    <label>その他<span>※</span></label><br>
                     <textarea name="comment"></textarea><br>
                     <button class="c-button--submit c-shadow" type=“submit>送信</button>
                 </form>
